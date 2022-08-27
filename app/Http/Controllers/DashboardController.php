@@ -13,7 +13,7 @@ class DashboardController extends Controller
      */
     public function index()
     {
-        $projects = Project::all();
+        $projects = Project::with('country', 'status', 'office', 'readiness')->get();
         $total = count($projects);
         $total_amount = $projects->sum('grant_amount');
         $first_disbursement_amount = $projects->sum('first_disbursement_amount');

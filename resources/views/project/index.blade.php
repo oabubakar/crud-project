@@ -50,10 +50,10 @@
                         <td>{{$project->end_date}}</td>
                         <td>{{$project->readiness_or_nap}}</td>
                         <td>{{$project->first_disbursement_amount}}</td>
-                        <td>{{$project->country_id}}</td>
-                        <td>{{$project->office_id}}</td>
-                        <td>{{$project->readiness_type_id}}</td>
-                        <td>{{$project->status_id}}</td>
+                        <td>{{$project->country->name}}</td>
+                        <td>{{$project->office->name}}</td>
+                        <td>{{$project->readiness->readiness_type}}</td>
+                        <td>{{$project->status->status}}</td>
                         <td><a href="{{ route('projects.edit', $project->id)}}" class="btn btn-primary">Edit</a></td>
                         <td><form action="{{ route('projects.destroy', $project->id)}}" method="post">
                                 @csrf
