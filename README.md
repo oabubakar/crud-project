@@ -38,7 +38,7 @@ Import/Dump `crud-project.sql` found inside app\database\dump directory in this 
 ```
 7. Database credentials
 ```
-Ensure you update the database credentails inside .env file if you are using credentails other than the default ones
+Ensure you update the database credentails inside .env.example file if you are using credentails other than the default ones. Rename .env.example to .env
 ```
 ## Test Web App
 8. Navigate to http://localhost/crud-project/public/
